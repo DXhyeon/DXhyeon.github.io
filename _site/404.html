@@ -343,42 +343,29 @@
       
 
     
-      
-
-      
-      <a href="https://twitter.com/twitter_username" aria-label="twitter"
-        target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-      
-
     
-      
-
-      
-      <a href="
-          javascript:location.href = 'mailto:' + ['kimdxhyeon','gamil.com'].join('@')" aria-label="email"
-        >
-        <i class="fas fa-envelope"></i>
-      </a>
-      
-
-    
-      
-
-      
-      <a href="/feed.xml" aria-label="rss"
-        >
-        <i class="fas fa-rss"></i>
-      </a>
-      
-
-    
+    <a href="" aria-label="email">
+    <i onclick="clip()" class="fas fa-envelope"
+     data-toggle="tooltip" data-placement="top"
+     title="Copy Email"></i>
+  </a>
 
   </div> <!-- .sidebar-bottom -->
 
 </div><!-- #sidebar -->
 
+<script type="text/javascript">
+  function clip(){
+    var url = '';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    url = ['kimdxhyeon','gmail.com'].join('@');
+    textarea.value = url;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
+</script>
 
     <!--
   The Top Bar
@@ -582,15 +569,7 @@
       
       
       
-      <li><a href="/posts/Buffer-Over-flow(BOF)-%EB%B3%B5%EC%82%AC%EB%B3%B8-%EB%B3%B5%EC%82%AC%EB%B3%B8/"><span style="color:#da8b8b">SecureCoding&nbsp;›&nbsp;</span>Memory Buffer Over flow (BOF)</a>
-      </li>
-      
-      
-      <li><a href="/posts/Buffer-Over-flow(BOF)-%EB%B3%B5%EC%82%AC%EB%B3%B8-%EB%B3%B5%EC%82%AC%EB%B3%B8-%EB%B3%B5%EC%82%AC%EB%B3%B8/"><span style="color:#da8b8b">SecureCoding&nbsp;›&nbsp;</span>Memory Buffer Over flow (BOF)</a>
-      </li>
-      
-      
-      <li><a href="/posts/Buffer-Over-flow(BOF)-%EB%B3%B5%EC%82%AC%EB%B3%B8-%EB%B3%B5%EC%82%AC%EB%B3%B8-(5)/"><span style="color:#da8b8b">SecureCoding&nbsp;›&nbsp;</span>Memory Buffer Over flow (BOF)</a>
+      <li><a href="/posts/Buffer-Over-flow(BOF)/"><span style="color:#da8b8b">SecureCoding&nbsp;›&nbsp;</span>Memory Buffer Over flow (BOF)</a>
       </li>
         
   </ul>

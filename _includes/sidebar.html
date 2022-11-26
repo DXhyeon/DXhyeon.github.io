@@ -87,7 +87,26 @@
       {% endif %}
 
     {% endfor %}
+    
+    <a href="" aria-label="email">
+    <i onclick="clip()" class="fas fa-envelope"
+     data-toggle="tooltip" data-placement="top"
+     title="Copy Email"></i>
+  </a>
 
   </div> <!-- .sidebar-bottom -->
 
 </div><!-- #sidebar -->
+
+<script type="text/javascript">
+  function clip(){
+    var url = '';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    url = ['kimdxhyeon','gmail.com'].join('@');
+    textarea.value = url;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
+</script>
