@@ -8,6 +8,10 @@ layout: page
 
 {% assign posts = "" | split: "" %}
 
+<!-- Total post size -->
+
+<h2 style="font-weight: bold;">TOTAL ({{site.posts.size}})</h2>
+
 <!-- Get pinned posts -->
 
 {% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
@@ -24,27 +28,28 @@ layout: page
 <!-- Get default posts -->
 
 {% assign default_beg = offset | minus: pinned.size %}
-
-{% if default_beg < 0 %}
+{% if default_beg < 0 %} 
   {% assign default_beg = 0 %}
 {% endif %}
-
-{% assign default_num = paginator.posts | size | minus: pinned_num  %}
+{% assign default_num = paginator.posts | size | minus: pinned_num  %} 
 {% assign default_end = default_beg | plus: default_num | minus: 1 %}
-
-{% if default_num > 0 %}
+{% if default_num > 0 %} 
   {% for i in (default_beg..default_end) %}
     {% assign posts = posts | push: default[i] %}
   {% endfor %}
-{% endif %}
+{% endif %} 
 
 <div id="post-list">
+  
+  {% for post in posts %}
 
-{% for post in posts %}
-
+  {% assign many = post.categories | size %}
+  {% assign last = many | minus: 1 %} 
+  {% capture _category_url %}/categories/{{ post.categories[last] | slugify | url_encode }}/{% endcapture %}
   <div class="post-preview">
     <h1>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a href="{{ _category_url | relative_url }}"><span style="color:rgb(218, 139, 139);">{{
+          post.categories[last] }} › </span></a><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h1>
 
     <div class="post-content">
@@ -53,6 +58,8 @@ layout: page
         {{ content | markdownify | strip_html | truncate: 200 | escape }}
       </p>
     </div>
+    
+    
 
     <div class="post-meta text-muted d-flex">
       <div class="mr-auto">
@@ -88,6 +95,78 @@ layout: page
 {% endfor %}
 
 </div> <!-- #post-list -->
+
+{% if paginator.total_pages > 0 %}
+  {% include post-paginator.html %}
+{% endif %}
+
+<div id="post-list">
+
+  {% for post in default %}
+
+  {% assign many = post.categories | size %}
+  {% assign last = many | minus: 1 %} 
+  {% capture _category_url %}/categories/{{ post.categories[last] | slugify | url_encode }}/{% endcapture %}
+  <div class="post-preview">
+    <h1>
+      <a href="{{ _category_url | relative_url }}"><span style="color:rgb(218, 139, 139);">{{
+          post.categories[last] }} › </span></a><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        {% include no-linenos.html content=post.content %}
+        {{ content | markdownify | strip_html | truncate: 200 | escape }}
+      </p>
+    </div>
+
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        {% include datetime.html date=post.date %}
+
+        <!-- categories -->
+        {% if post.categories.size > 0 %}
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          {% for category in post.categories %}
+            <a href="{{ _category_url | relative_url }}">{{ category }}</a>
+            {%- unless forloop.last -%},{%- endunless -%}
+          {% endfor %}
+          </span>
+        {% endif %}
+
+        <!-- tags -->
+        {% if post.tags.size > 0 %}
+          <i class="fa fa-tags fa-fw"></i>
+          <span>
+          {% for tag in post.tags %}
+          {% assign _tag_url_ = tag | slugify | url_encode | prepend: "/tags/" | append: "/" %}
+          <a href="{{ _tag_url_ | relative_url }}">{{ tag }}</a>
+            {%- unless forloop.last -%},{%- endunless -%}
+          {% endfor %}
+          </span>
+        {% endif %}
+
+      </div>
+
+      {% if post.pin %}
+      <div class="pin">
+        <i class="fas fa-thumbtack fa-fw"></i>
+        <span>{{ site.data.locales[site.lang].post.pin_prompt }}</span>
+      </div>
+      {% endif %}
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+{% endfor %}
+    
+</div>
 
 {% if paginator.total_pages > 0 %}
   {% include post-paginator.html %}

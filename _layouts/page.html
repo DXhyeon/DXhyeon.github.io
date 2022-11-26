@@ -13,6 +13,7 @@ layout: default
     {% capture _content %}
       {% if layout.refactor or page.layout == 'page' %}
         {% include refactor-content.html content=content %}
+        
       {% else %}
         {{ content }}
       {% endif %}
@@ -38,7 +39,9 @@ layout: default
   <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
 
     <div class="access">
-      {% include update-list.html %}
+      <!-- {% include update-list.html %} -->
+      {% include toc.html %}
+      {% include recent-list.html %}
       {% include trending-tags.html %}
     </div>
 

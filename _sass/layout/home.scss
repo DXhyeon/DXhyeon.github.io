@@ -57,11 +57,11 @@
   padding-right: 0.5rem;
 
   .post-preview {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--main-border-color);
 
-    a:hover {
+    a:hover {                      
       @extend %link-hover;
     }
 
@@ -131,7 +131,7 @@
 /* Sidebar is visible */
 @media all and (min-width: 831px) {
   #post-list {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 
     .post-preview .post-meta {
       .pin {
