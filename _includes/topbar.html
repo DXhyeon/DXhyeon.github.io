@@ -29,11 +29,11 @@
             <span>{{ site.data.locales[site.lang].tabs[item] | default: page.title }}</span>
           {% else %}
             {% if page.categories.size != NULL %}
-              <!-- <span>
+              <span>
                 <a href="{{ '/categories' | relative_url }}">
                   {{ page.categories }}
                 </a>
-              </span> -->
+              </span>
             {% endif %}
             <span>{{ page.title }}</span>
           {% endif %}
