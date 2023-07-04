@@ -199,3 +199,9 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
+markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
