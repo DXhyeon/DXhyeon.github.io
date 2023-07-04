@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Dxhyeon</title>
   <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
-  <updated>2022-11-26T23:36:15+09:00</updated>
+  <updated>2023-07-04T10:12:50+09:00</updated>
   <author>
     <name>Dxhyeon</name>
     <uri>http://localhost:4000/</uri>
@@ -13,15 +13,15 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator>
-  <rights> © 2022 Dxhyeon </rights>
+  <rights> © 2023 Dxhyeon </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>Memory Buffer Over flow (BOF)</title>
-    <link href="http://localhost:4000/posts/Buffer-Over-flow(BOF)/" rel="alternate" type="text/html" title="Memory Buffer Over flow (BOF)" />
+    <title>TEST</title>
+    <link href="http://localhost:4000/posts/Buffer-Over-flow(BOF)/" rel="alternate" type="text/html" title="TEST" />
     <published>2022-11-23T20:43:00+09:00</published>
   
     <updated>2022-11-23T20:43:00+09:00</updated>
@@ -34,7 +34,7 @@
 
   
     
-    <category term="SecureCoding" />
+    <category term="TEST" />
     
   
 
