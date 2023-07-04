@@ -28,13 +28,13 @@
           {% if page.collection == 'tabs' %}
             <span>{{ site.data.locales[site.lang].tabs[item] | default: page.title }}</span>
           {% else %}
-            {% if page.categories.size != NULL %}
+            <!-- {% if page.categories.size != NULL %}
               <span>
                 <a href="{{ '/categories' | relative_url }}">
                   {{ page.categories }}
                 </a>
               </span>
-            {% endif %}
+            {% endif %} -->
             <span>{{ page.title }}</span>
           {% endif %}
 
