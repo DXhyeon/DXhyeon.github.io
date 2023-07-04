@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Dxhyeon</title>
   <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
-  <updated>2023-07-04T16:39:11+09:00</updated>
+  <updated>2023-07-04T17:19:28+09:00</updated>
   <author>
     <name>Dxhyeon</name>
     <uri>http://localhost:4000/</uri>
@@ -20,21 +20,21 @@
 
   
   <entry>
-    <title>TEST1</title>
-    <link href="http://localhost:4000/posts/TEST-POST/" rel="alternate" type="text/html" title="TEST1" />
-    <published>2023-07-04T11:32:00+09:00</published>
+    <title>SQL injection</title>
+    <link href="http://localhost:4000/posts/SQL-Injection/" rel="alternate" type="text/html" title="SQL injection" />
+    <published>2023-07-04T17:06:00+09:00</published>
   
-    <updated>2023-07-04T11:32:00+09:00</updated>
+    <updated>2023-07-04T17:06:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/TEST-POST/</id>
-    <content src="http://localhost:4000/posts/TEST-POST/" />
+    <id>http://localhost:4000/posts/SQL-Injection/</id>
+    <content src="http://localhost:4000/posts/SQL-Injection/" />
     <author>
       <name>Dxhyeon</name>
     </author>
 
   
     
-    <category term="TEST" />
+    <category term="웹해킹" />
     
   
 
@@ -46,7 +46,13 @@
 
 
 
-      aaaas
+      SQL injection
+1. SQL injection 이란?
+SQL injection은 웹 사이트의 보안상 허점을 이용해 악의적인 SQL Query문을 주입하고 실행되게 함으로써 데이터베이스를 비정상적으로  조작하여 공격자가 원하는 정보를 가져오는 공격기법이다.
+
+예시
+printf("hello")
+
 
     </summary>
   

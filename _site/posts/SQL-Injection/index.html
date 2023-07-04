@@ -23,6 +23,12 @@
 
   
 
+    
+
+    
+
+  
+
   
 
   
@@ -30,24 +36,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="TEST" />
+<meta property="og:title" content="SQL injection" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive, and powerful Jekyll theme for presenting professional writing." />
-<meta property="og:description" content="A minimal, responsive, and powerful Jekyll theme for presenting professional writing." />
-<link rel="canonical" href="http://localhost:4000/categories/test/" />
-<meta property="og:url" content="http://localhost:4000/categories/test/" />
+<meta name="description" content="SQL injection 1. SQL injection 이란? SQL injection은 웹 사이트의 보안상 허점을 이용해 악의적인 SQL Query문을 주입하고 실행되게 함으로써 데이터베이스를 비정상적으로 조작하여 공격자가 원하는 정보를 가져오는 공격기법이다." />
+<meta property="og:description" content="SQL injection 1. SQL injection 이란? SQL injection은 웹 사이트의 보안상 허점을 이용해 악의적인 SQL Query문을 주입하고 실행되게 함으로써 데이터베이스를 비정상적으로 조작하여 공격자가 원하는 정보를 가져오는 공격기법이다." />
+<link rel="canonical" href="http://localhost:4000/posts/SQL-Injection/" />
+<meta property="og:url" content="http://localhost:4000/posts/SQL-Injection/" />
 <meta property="og:site_name" content="Dxhyeon" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-07-04T17:06:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="TEST" />
+<meta property="twitter:title" content="SQL injection" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive, and powerful Jekyll theme for presenting professional writing.","headline":"TEST","url":"http://localhost:4000/categories/test/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-04T17:06:00+09:00","datePublished":"2023-07-04T17:06:00+09:00","description":"SQL injection 1. SQL injection 이란? SQL injection은 웹 사이트의 보안상 허점을 이용해 악의적인 SQL Query문을 주입하고 실행되게 함으로써 데이터베이스를 비정상적으로 조작하여 공격자가 원하는 정보를 가져오는 공격기법이다.","headline":"SQL injection","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Injection/"},"url":"http://localhost:4000/posts/SQL-Injection/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>TEST | Dxhyeon
+  <title>SQL injection | Dxhyeon
   </title>
 
   <!--
@@ -101,7 +108,12 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+  
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -390,12 +402,6 @@
       
 
         
-          <span>
-            <a href="/categories">
-              Categories
-            </a>
-          </span>
-        
 
       
 
@@ -403,7 +409,13 @@
           
           
             
-            <span>TEST</span>
+              <span>
+                <a href="/categories">
+                  웹해킹
+                </a>
+              </span>
+            
+            <span>SQL injection</span>
           
 
         
@@ -417,7 +429,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Category
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -451,18 +463,131 @@
     
       
       
-        <div id="page-category">
-  <h1 class="pl-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    TEST
-    <span class="lead text-muted pl-2">1</span>
-  </h1>
+        <!--
+  Refactor the HTML structure.
+-->
 
-  <ul class="post-content pl-0">
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+<!-- images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
     
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/posts/TEST-POST/">TEST1</a>
-      <span class="dash flex-grow-1"></span>
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- Wrap prompt element of blockquote with the <div> tag -->
+
+
+
+
+
+
+
+<!-- return -->
+
+<h1 data-toc-skip>SQL injection</h1>
+
+<div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
       <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -472,18 +597,164 @@
 
 
 
-<span class="text-muted small"
-    data-ts="1688437920"
+<em class=""
+    data-ts="1688457960"
     data-df="ll"
-    >
+    data-toggle="tooltip" data-placement="bottom">
   Jul  4, 2023
-</span>
+</em>
 
-    </li>
+    </span>
+
+    <!-- lastmod date -->
     
-  </ul>
+
+  
+
+  <div class="d-flex justify-content-between">
+    <!-- author(s) -->
+    <span>
+      
+
+      By
+
+      <em>
+      
+        <a href="https://github.com/Dxhyeon">Dxhyeon</a>
+      
+      </em>
+    </span>
+
+    <div>
+      <!-- page views -->
+      
+
+      <!-- read time -->
+      <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+<!-- words per minute  -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom"
+  title="87 words">
+  <em>1 min</em> read</span>
+
+    </div>
+
+  </div> <!-- .d-flex -->
+
+</div> <!-- .post-meta -->
+
+<div class="post-content">
+  <h1 id="sql-injection">SQL injection</h1>
+<h2 id="1-sql-injection-이란"><span class="mr-2"><strong>1. SQL injection 이란?</strong></span><a href="#1-sql-injection-이란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>SQL injection은 웹 사이트의 보안상 허점을 이용해 악의적인 SQL Query문을 주입하고 실행되게 함으로써 데이터베이스를 비정상적으로  조작하여 공격자가 원하는 정보를 가져오는 공격기법이다.</p>
+
+<h3 id="예시"><span class="mr-2"><strong>예시</strong></span><a href="#예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>printf("hello")
+</pre></td></tr></tbody></table></code></div></div>
+
 </div>
 
+<div class="post-tail-wrapper text-muted">
+
+  <!-- categories -->
+  
+  <div class="post-meta mb-3">
+    <i class="far fa-folder-open fa-fw mr-1"></i>
+    
+      <a href='/categories/%EC%9B%B9%ED%95%B4%ED%82%B9/'>웹해킹</a>
+  </div>
+  
+
+  <!-- tags -->
+  
+  <div class="post-tags">
+    <i class="fa fa-tags fa-fw mr-1"></i>
+      
+      <a href="/tags/web/"
+          class="post-tag no-text-decoration" >Web</a>
+      
+  </div>
+  
+
+  <div class="post-tail-bottom
+    d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+    <div class="license-wrapper">
+
+      
+    </div>
+
+    <!--
+ Post sharing snippet
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+        <a href="https://twitter.com/intent/tweet?text=SQL+injection+-+Dxhyeon&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FSQL-Injection%2F" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=SQL+injection+-+Dxhyeon&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FSQL-Injection%2F" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FSQL-Injection%2F&text=SQL+injection+-+Dxhyeon" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
+
+    <i id="copy-link" class="fa-fw fas fa-link small"
+        data-toggle="tooltip" data-placement="top"
+        title="Copy link"
+        data-title-succeed="Link copied successfully!">
+    </i>
+
+  </span>
+</div>
+
+
+  </div><!-- .post-tail-bottom -->
+
+</div><!-- div.post-tail-wrapper -->
+
+<script src="https://utteranc.es/client.js"
+        repo="Dxhyeon/Dxhyeon.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+        
       
     
     
@@ -515,6 +786,14 @@
 
 
 
+<!-- BS-toc.js will be loaded at medium priority -->
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+<div id="panel-heading" class="pl-0 pr-4 mb-5" >
+  <div class="panel-heading pl-3 pt-2 mb-2">🐈&nbsp;Contents</div>
+  <nav id="toc" data-toggle="toc"></nav>
+</div>
+
 
 
       <div id="access-lastmod" class="post">
@@ -524,7 +803,7 @@
       
       
       
-      <li><a href="/posts/TEST-POST/"><span style="color:#da8b8b">TEST&nbsp;›&nbsp;</span>TEST1</a>
+      <li><a href="/posts/SQL-Injection/"><span style="color:#da8b8b">웹해킹&nbsp;›&nbsp;</span>SQL injection</a>
       </li>
         
   </ul>
@@ -562,7 +841,7 @@
 
     
       
-      <a class="post-tag" href="/tags/c/">C</a>
+      <a class="post-tag" href="/tags/web/">Web</a>
     
 
     </div>
@@ -577,6 +856,84 @@
 </div>
 
 <!-- tail -->
+
+<div class="row">
+  <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4 mt-5">
+    
+      
+      <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+  
+    
+    
+  
+
+
+
+
+    
+      
+      <!--
+  Navigation buttons at the bottom of the post.
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <div class="btn btn-outline-primary disabled"
+    prompt="Older">
+    <p>-</p>
+  </div>
+  
+
+  
+  <div class="btn btn-outline-primary disabled"
+    prompt="Newer">
+    <p>-</p>
+  </div>
+  
+
+</div>
+
+    
+      
+      <!--  The comments switcher -->
+
+
+    
+  </div>
+</div>
 
 
       </div>
@@ -620,7 +977,7 @@
 
     
       
-      <a class="post-tag" href="/tags/c/">C</a>
+      <a class="post-tag" href="/tags/web/">Web</a>
     
 
     </div>
@@ -742,6 +1099,52 @@ SimpleJekyllSearch({
 <!-- layout specified -->
 
 
+  
+
+
+
+  <!-- image lazy-loading & popup & clipboard -->
+  
+
+  
+
+
+
+
+
+
+
+  
+    
+
+    
+
+  
+
+
+
+  
+    
+
+    
+
+  
+
+
+
+  
+    
+
+    
+
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+
+
 
 
 
@@ -805,7 +1208,7 @@ SimpleJekyllSearch({
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

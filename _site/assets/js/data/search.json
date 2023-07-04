@@ -1,11 +1,11 @@
 [
   
   {
-    "title": "TEST1",
-    "url": "/posts/TEST-POST/",
-    "categories": "TEST",
-    "tags": "C",
-    "date": "2023-07-04 11:32:00 +0900",
+    "title": "SQL injection",
+    "url": "/posts/SQL-Injection/",
+    "categories": "웹해킹",
+    "tags": "Web",
+    "date": "2023-07-04 17:06:00 +0900",
     
 
 
@@ -13,8 +13,8 @@
 
 
     
-    "snippet": "aaaas",
-    "content": "aaaas"
+    "snippet": "SQL injection1. SQL injection 이란?SQL injection은 웹 사이트의 보안상 허점을 이용해 악의적인 SQL Query문을 주입하고 실행되게 함으로써 데이터베이스를 비정상적으로  조작하여 공격자가 원하는 정보를 가져오는 공격기법이다.예시printf(\"hello\")",
+    "content": "SQL injection1. SQL injection 이란?SQL injection은 웹 사이트의 보안상 허점을 이용해 악의적인 SQL Query문을 주입하고 실행되게 함으로써 데이터베이스를 비정상적으로  조작하여 공격자가 원하는 정보를 가져오는 공격기법이다.예시printf(\"hello\")"
   }
   
 ]
