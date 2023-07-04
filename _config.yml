@@ -120,6 +120,7 @@ pwa:
 paginate: 10
 
 # ------------ The following options are not recommended to be modified ------------------
+markdown: kramdown
 
 kramdown:
   syntax_highlighter: rouge
@@ -198,10 +199,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-markdown: kramdown
-kramdown:
-    highlighter: rouge
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
