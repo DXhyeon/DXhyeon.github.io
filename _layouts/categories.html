@@ -70,33 +70,35 @@ layout: page
       <!-- arrow -->
       {% if top_posts_size > 0%}
       <a href="#{{ LIST_PREFIX }}{{ group_index }}" data-toggle="collapse"
-        aria-expanded="true" aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
-        class="category-trigger hide-border-bottom">
-        <i class="fas fa-fw fa-angle-down"></i>
+        aria-expanded="false" aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
+        class="category-trigger hide-border-bottom collapsed">
+        <i class="fas fa-fw fa-angle-down rotate"></i>
       </a>
       {% else %}
       <span data-toggle="collapse" class="category-trigger hide-border-bottom disabled">
         <i class="fas fa-fw fa-angle-right"></i>
-      </span>
+      </span> 
       {% endif %}
-
+      
     </div> <!-- .card-header -->
-
+    
     <!-- Sub-categories -->
-    {% if top_posts_size > 0 %}
-    <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
-      <ul class="list-group">
-        {% for post in category[1] %}
-        <li class="list-group-item">
-          📄&nbsp;<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span>&nbsp;
-            {% include datetime.html date=post.date wrap='span' class='text-muted small' %}
-          </span>
-        </li>
-        {% endfor %}
-      </ul>
+    <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse" aria-expanded="false">
+      <div class="overflow-auto" style="max-height: 535px;">
+        {% if top_posts_size > 0 %}
+        <ul class="list-group">
+          {% for post in category[1] limit:display_count %}
+            <li class="list-group-item">
+              📄&nbsp;<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span>&nbsp;
+                {% include datetime.html date=post.date wrap='span' class='text-muted small' %}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
     </div>
-    {% endif %}
 
   </div> <!-- .card -->
 

@@ -2,7 +2,7 @@
   <div class="panel-heading"><span style="color:#0b0b0b">🐈&nbsp;</span>Recent Post
   </div>
   <ul class="post-content pl-0 pb-1 ml-1 mt-2">
-      {% assign posts = site.posts | slice: 0, 3 %}
+      {% assign posts = site.posts | slice: 0, 4 %}
       {% for post in posts %}
       {% assign url = post.url | relative_url %}
       <li><a href="{{ url }}"><span style="color:#da8b8b">{{ post.categories[0] }}&nbsp;›&nbsp;</span>{{ post.title

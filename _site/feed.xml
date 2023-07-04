@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Dxhyeon</title>
   <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
-  <updated>2023-07-04T11:07:34+09:00</updated>
+  <updated>2023-07-04T16:01:13+09:00</updated>
   <author>
     <name>Dxhyeon</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>TEST</title>
-    <link href="http://localhost:4000/posts/Buffer-Over-flow(BOF)/" rel="alternate" type="text/html" title="TEST" />
-    <published>2022-11-23T20:43:00+09:00</published>
+    <title>TEST1</title>
+    <link href="http://localhost:4000/posts/TEST-POST/" rel="alternate" type="text/html" title="TEST1" />
+    <published>2023-07-04T11:32:00+09:00</published>
   
-    <updated>2023-07-04T10:14:24+09:00</updated>
+    <updated>2023-07-04T11:32:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/Buffer-Over-flow(BOF)/</id>
-    <content src="http://localhost:4000/posts/Buffer-Over-flow(BOF)/" />
+    <id>http://localhost:4000/posts/TEST-POST/</id>
+    <content src="http://localhost:4000/posts/TEST-POST/" />
     <author>
       <name>Dxhyeon</name>
     </author>
@@ -46,7 +46,7 @@
 
 
 
-      
+      aaaas
 
     </summary>
   
